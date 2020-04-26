@@ -1,1 +1,3 @@
-# com.cm.events
+# CM Events
+
+CM Events is a platform independent package for delegation. This package will add events like SimpleEvent, IntEvent, BoolEvent etc...
