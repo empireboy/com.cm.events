@@ -24,6 +24,19 @@ namespace CM.Events
 		}
 
 		/// <summary>
+		/// Remove a listener.
+		/// </summary>
+		/// <typeparam name="T">The event Type to listen to.</typeparam>
+		/// <param name="listener">The callback method.</param>
+		public static void RemoveListener<T>(Action<object> listener) where T : class
+		{
+			if (!_listeners.ContainsKey(typeof(T)))
+				return;
+
+			_listeners[typeof(T)].Remove(listener);
+		}
+
+		/// <summary>
 		/// Triggers an event.
 		/// </summary>
 		/// <typeparam name="T">The event Type to trigger.</typeparam>
