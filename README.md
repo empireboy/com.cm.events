@@ -1,4 +1,4 @@
-# CM Events V0.2.0
+# CM Events v0.2.0
 
 CM Events is a platform independent package for delegation. This package will add events like SimpleEvent, IntEvent, BoolEvent etc...
 
